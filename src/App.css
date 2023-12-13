@@ -1,38 +1,79 @@
-.App {
+.dropdown-for-donor-1st-dropdown {
+  padding: 5px 85px;
+  margin-left: 70px;
+  margin-bottom: 5px;
+}
+.Header-for-the-donation-page {
+  color: black;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-for-the-donation-page {
+  margin-left: 550px;
+  color: black;
+  margin-top: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.for-input-tags input,textarea {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px 80px;
+  margin-left: 70px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.table-move-in-donor-page {
+  margin-left: 70px;
 }
-
-.App-link {
-  color: #61dafb;
+.donations-in-donor-page {
+  color: black;
+  /* margin-left: 430px; */
+  text-align: center;
+  margin-top: 100px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-button{
+  padding: 4px 10px;
+  /* width: 100px; */
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  margin-left: 20px;
+  /* border-radius: 20px; */
+}
+.comment-tag-in-donor-page {
+  padding: 20px 83.5px;
+}
+.This-is-for-errror-message {
+  text-align: center;
+  /* margin-left: 80px; */
+  color: black;
+}
+.Donor-page-heading {
+  color: black;
+  margin-left: 15px;
+}
+.for-both-buttons-in-donor-page{
+  margin-left: 90px;
+}
+.for-both-buttons-in-donor-page button {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.submit-button-in-donor-page {
+  margin-right: 30px;
+  background-color: rgb(94, 122, 199);
+  border-style: none;
+}
+.Reset-button-in-donr-page {
+  border-style: none;
+  background-color: rgb(206, 62, 62);
+  width: 120px;
+}
+.form-tag-in-donor-page {
+  box-shadow:
+    rgba(214, 222, 230, 0.42) 0px 60px 123px -25px,
+    rgba(255, 255, 255, 0.08) 0px 35px 75px -35px;
+    border-color:
+    rgb(213, 220, 226)
+    rgb(213, 220, 226)
+    rgb(184, 194, 204);
+    width: 480px;
+  margin-left: 450px;
+  border-radius: 10px;
+  border: 1px solid;
 }
