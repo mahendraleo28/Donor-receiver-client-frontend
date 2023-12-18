@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./App.css";
-import { useEffect } from 'react';
 
 const DonationForm = () => {
   const [donation, setDonation] = useState({
@@ -13,7 +12,7 @@ const DonationForm = () => {
     country: '',
     postalCode: '',
   });
-  const [donations, setDonations] = useState([]);
+  // const [donations, setDonations] = useState([]);
   const [message, setMessage] = useState("")
   const reset=() => {
     setDonation({
@@ -39,7 +38,7 @@ const DonationForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8080/send-data', {
+      const response = await fetch('http://localhost:9090/send-data', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -74,24 +73,24 @@ const DonationForm = () => {
       setMessage(`${error}`)
     }
   };
-  const handleDelete = async (id) => {
-    try {
-      const response = await fetch(`http://localhost:8081/donations/${id}`, {
-        method: 'DELETE',
-      });
+  // const handleDelete = async (id) => {
+  //   try {
+  //     const response = await fetch(`http://localhost:9090/donations/${id}`, {
+  //       method: 'DELETE',
+  //     });
 
-      if (response.ok) {
-        alert(`Donation with ID: ${id} deleted successfully!`);
-        // Fetch donations again to update the list
-      } else {
-        alert('Failed to delete donation.');
-      }
-    } catch (error) {
-      alert('Error occurred while deleting donation: ' + error);
-      console.error('Error occurred while deleting donation:', error);
-      setMessage(`${error}`)
-    }
-  };
+  //     if (response.ok) {
+  //       alert(`Donation with ID: ${id} deleted successfully!`);
+  //       // Fetch donations again to update the list
+  //     } else {
+  //       alert('Failed to delete donation.');
+  //     }
+  //   } catch (error) {
+  //     alert('Error occurred while deleting donation: ' + error);
+  //     console.error('Error occurred while deleting donation:', error);
+  //     setMessage(`${error}`)
+  //   }
+  // };
 
 
   return (
